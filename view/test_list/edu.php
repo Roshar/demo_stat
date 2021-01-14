@@ -679,9 +679,9 @@
             </div>
             <nav class="f">
                 <ul>
-                    <li><a href="/main/index/#tests">Тесты</a></li>
-                    <li><a href="/main/index/#project-id">О проекте</a></li>
-                    <li><a href="/main/index/#contact-id">Контакты</a></li>
+                    <li><a href="/main#tests">Тесты</a></li>
+                    <li><a href="/main#project-id">О проекте</a></li>
+                    <li><a href="/main#contact-id">Контакты</a></li>
                 </ul>
             </nav>
         </div>

@@ -49,11 +49,6 @@ class Router
             $currentUrl = substr($currentUrl,0,strpos($currentUrl,'?'));
         }
 
-//        echo "<pre>";
-//        print_r($currentUrl);
-//        echo "<pre>";
-//        exit;
-
         $method = $_SERVER['REQUEST_METHOD'] ?? null;
 
         if($method === "GET") {
