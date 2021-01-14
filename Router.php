@@ -42,7 +42,18 @@ class Router
 
     public function resolve()
     {
-        $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
+
+        $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
+
+        if(strpos($currentUrl, '?')!== false){
+            $currentUrl = substr($currentUrl,0,strpos($currentUrl,'?'));
+        }
+
+//        echo "<pre>";
+//        print_r($currentUrl);
+//        echo "<pre>";
+//        exit;
+
         $method = $_SERVER['REQUEST_METHOD'] ?? null;
 
         if($method === "GET") {
