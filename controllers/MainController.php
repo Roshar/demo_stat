@@ -40,11 +40,6 @@ class MainController
 
         if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-            $postData['firstname'] = htmlspecialchars(trim($_POST['firstname']));
-            $postData['lastname']  = htmlspecialchars(trim($_POST['lastname']));
-            $postData['email']  = htmlspecialchars(trim($_POST['email']));
-            $postData['message']  = htmlspecialchars(trim($_POST['message']));
-
             $arrOption = [
                 'firstname' => htmlspecialchars(trim($_POST['firstname'])),
                 'lastname' => htmlspecialchars(trim($_POST['lastname'])),
